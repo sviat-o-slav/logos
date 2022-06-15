@@ -5,6 +5,11 @@
     src: url('../fonts/gilroy-light.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Zing';
+    src: url('../fonts/zing-rust-demo-base.otf') format('truetype');
+}
+
 body {
     margin: 0;
     background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
@@ -204,11 +209,16 @@ a {
     display: flex;
     justify-content: flex-end;
 
+
     position: relative;
+
+    height: 480px;
 
     .fade {
         display: inline-flex;
-        position: relative;
+        position: absolute;
+        z-index: 0;
+
 
         &:after {
             content: "";
@@ -216,8 +226,7 @@ a {
             width: 100%;
             height: 100%;
             position: absolute;
-            top: 0;
-            left: 0;
+
             background: transparent;
             background-image: linear-gradient(to right, #222021 5%,
                     rgba(68, 64, 63, 0.2) 80%);
@@ -226,8 +235,33 @@ a {
     }
 
     .header-prime-text {
+        z-index: 1;
         color: white;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            
+            margin: 0;
+            margin-left: 40px;
+
+            font-family: 'Zing';
+
+            font-style: italic;
+            font-weight: 500;
+            font-size: 67px;
+            line-height: 109.2%;
+            
+            
+            text-transform: uppercase;
+
+            transform: rotate(-9deg);
+
+            text-shadow: 
+            -8px 4px 0px #222021,
+             -8px 4px 3px rgba(255, 255, 255, 1);
+        }
+
         
-        position: absolute;
     }
 }
