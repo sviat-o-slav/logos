@@ -1,0 +1,233 @@
+@import "normalize.css";
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy-light.otf') format('truetype');
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+
+    min-width: 1220px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.header-top-block {
+    display: flex;
+    align-items: center;
+
+    background-color: #403C3B;
+
+    .header-top-menu {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        column-gap: 40px;
+
+        .header-top-logo {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 25px;
+            letter-spacing: 0.15em;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+
+        .header-top-location-form {
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 25px 0;
+
+            label {
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url("../assets/icons/location.svg") no-repeat 100%;
+                position: absolute;
+                left: 10px;
+            }
+
+            input {
+                background: #504B4A;
+                border-radius: 10px;
+
+                width: 555px;
+
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+
+                padding: 15px 50px;
+                outline: none;
+                border: none;
+
+                color: #CFCFCF;
+            }
+
+            button {
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url("../assets/icons//search.svg") no-repeat 100%;
+                position: absolute;
+                right: 15px;
+                border: none;
+            }
+        }
+
+        .header-top-contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 34px;
+
+            p {
+                margin: 0;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #CFCFCF;
+            }
+
+            a {
+                position: relative;
+                margin: 0;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #CFCFCF;
+
+                i {
+                    display: block;
+                    position: absolute;
+                    left: -42px;
+                    top: -16px;
+
+                    width: 32px;
+                    height: 32px;
+                    background: #618967 url("../assets/icons/call.svg") no-repeat center;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .header-top-cart {
+            margin-left: auto;
+
+            a {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                background: linear-gradient(116deg, #618967 5%, #72A479 94%);
+                border-radius: 10px;
+
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+
+                color: #FFFFFF;
+
+                padding: 7px;
+
+                span {
+                    margin: 7px;
+                }
+
+                div {
+                    height: 30px;
+                    width: 1px;
+                    background-color: #FFFFFF;
+                }
+
+                .cart-badge {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: #FFFFFF;
+
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 14px;
+
+                    color: #403C3B;
+                    ;
+                }
+            }
+        }
+    }
+}
+
+.header-prime {
+    background: #222021;
+    display: flex;
+    justify-content: flex-end;
+
+    position: relative;
+
+    .fade {
+        display: inline-flex;
+        position: relative;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: transparent;
+            background-image: linear-gradient(to right, #222021 5%,
+                    rgba(68, 64, 63, 0.2) 80%);
+
+        }
+    }
+
+    .header-prime-text {
+        color: white;
+        
+        position: absolute;
+    }
+}
