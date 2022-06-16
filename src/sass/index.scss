@@ -20,6 +20,7 @@ body {
     font-style: normal;
 
     min-width: 1220px;
+    height: 1400px;
 }
 
 ul {
@@ -274,6 +275,45 @@ a {
                 transform: skewX(15deg);
                 text-transform: uppercase;
             }
+        }
+    }
+}
+
+.header-navigation {
+    background: rgba(255, 255, 255, 0.01);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    .navigation-main {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            display: block;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            padding: 25px 0;
+            opacity: 0.7;
+
+            position: relative;
+            top: 2px;
+        }
+
+
+        .navigation-main-active {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #FFFFFF;
+            opacity: 1;
+
+            border-bottom: 3px solid #618967;
         }
     }
 }
