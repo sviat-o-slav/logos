@@ -14,7 +14,7 @@ body {
     margin: 0;
     background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
     background-repeat: no-repeat;
-    height: 100vh;
+
 
     font-family: 'Gilroy';
     font-style: normal;
@@ -205,63 +205,74 @@ a {
 }
 
 .header-prime {
-    background: #222021;
-    display: flex;
-    justify-content: flex-end;
-
-
-    position: relative;
+    background: #222021 url("../assets/images/menu.jpg") no-repeat right;
 
     height: 480px;
+    display: flex;
+    align-items: center;
 
-    .fade {
-        display: inline-flex;
-        position: absolute;
-        z-index: 0;
+    h2 {
 
+        color: white;
 
-        &:after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
+        margin: 0;
+        margin-left: 20px;
+        margin-bottom: 60px;
 
-            background: transparent;
-            background-image: linear-gradient(to right, #222021 5%,
-                    rgba(68, 64, 63, 0.2) 80%);
+        font-family: 'Zing';
 
-        }
+        font-style: italic;
+        font-weight: 500;
+        font-size: 67px;
+        line-height: 109.2%;
+
+        text-transform: uppercase;
+
+        transform: rotate(-9deg);
+
+        text-shadow:
+            -8px 4px 0px #222021,
+            -8px 4px 3px rgba(255, 255, 255, 1);
     }
 
+
     .header-prime-text {
-        z-index: 1;
-        color: white;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
 
-        h2 {
-            
-            margin: 0;
-            margin-left: 40px;
+        .header-prime-text-back {
 
-            font-family: 'Zing';
+            border: 1px solid white;
+            padding: 0px 8px;
+            margin-left: 120px;
+            transform: skewX(-20deg) rotate(-9deg);
 
-            font-style: italic;
-            font-weight: 500;
-            font-size: 67px;
-            line-height: 109.2%;
-            
-            
-            text-transform: uppercase;
+            div {
+                background-color: #618967;
+                padding: 10px 25px;
+                position: relative;
+                top: -15px;
 
-            transform: rotate(-9deg);
+            }
 
-            text-shadow: 
-            -8px 4px 0px #222021,
-             -8px 4px 3px rgba(255, 255, 255, 1);
+            p {
+                display: inline-flex;
+                color: white;
+
+                margin: 0;
+                
+                font-family: 'Zing';
+
+                font-weight: 500;
+                font-size: 37px;
+                line-height: 110%;
+
+                transform: skewX(15deg);
+
+                text-transform: uppercase;
+            }
         }
-
-        
     }
 }
