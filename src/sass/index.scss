@@ -197,7 +197,6 @@ a {
                     line-height: 14px;
 
                     color: #403C3B;
-                    ;
                 }
             }
         }
@@ -207,34 +206,8 @@ a {
 .header-prime {
     background: #222021 url("../assets/images/menu.jpg") no-repeat right;
 
-    height: 480px;
     display: flex;
     align-items: center;
-
-    h2 {
-
-        color: white;
-
-        margin: 0;
-        margin-left: 20px;
-        margin-bottom: 60px;
-
-        font-family: 'Zing';
-
-        font-style: italic;
-        font-weight: 500;
-        font-size: 67px;
-        line-height: 109.2%;
-
-        text-transform: uppercase;
-
-        transform: rotate(-9deg);
-
-        text-shadow:
-            -8px 4px 0px #222021,
-            -8px 4px 3px rgba(255, 255, 255, 1);
-    }
-
 
     .header-prime-text {
         display: flex;
@@ -242,19 +215,48 @@ a {
         justify-content: center;
         align-items: flex-start;
 
-        .header-prime-text-back {
+        padding: 100px 0;
 
+        h2 {
+            color: white;
+
+            margin: 0;
+            margin-left: 20px;
+            margin-bottom: 60px;
+
+            font-family: 'Zing';
+
+            font-style: italic;
+            font-weight: 500;
+            font-size: 67px;
+            line-height: 109.2%;
+
+            text-transform: uppercase;
+
+            transform: rotate(-9deg);
+
+            text-shadow:
+                -8px 4px 0px #222021,
+                -8px 4px 3px rgba(255, 255, 255, 1);
+        }
+
+        .header-prime-text-back {
             border: 1px solid white;
             padding: 0px 8px;
             margin-left: 120px;
             transform: skewX(-20deg) rotate(-9deg);
+
+            background-color: transparent;
+            border: 1px solid;
+            border-image-slice: 1;
+            border-width: 1px;
+            border-image-source: linear-gradient(45deg, rgba(0, 0, 0, 0) 1%, #FFFFFF);
 
             div {
                 background-color: #618967;
                 padding: 10px 25px;
                 position: relative;
                 top: -15px;
-
             }
 
             p {
@@ -262,7 +264,7 @@ a {
                 color: white;
 
                 margin: 0;
-                
+
                 font-family: 'Zing';
 
                 font-weight: 500;
@@ -270,7 +272,6 @@ a {
                 line-height: 110%;
 
                 transform: skewX(15deg);
-
                 text-transform: uppercase;
             }
         }
