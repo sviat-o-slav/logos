@@ -544,6 +544,183 @@ a {
 
 
 
+.contacts-block {
+    
+    background: url("../assets/images/map.jpg") no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+
+.contacts-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    width: 450px;
+    padding: 35px;
+
+    background: #2E2B2C;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+
+    h4 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    address {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        font-style: normal;
+        
+        padding: 20px 0;
+        padding-left: 42px;
+
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+
+        border-image-slice: 1;
+        border-width: 1px;
+        border-image-source: linear-gradient(90deg, 
+            rgba(255,255,255,0) 0%, 
+            rgba(255,255,255,1) 45%, 
+            rgba(255,255,255,1) 55%, 
+            rgba(255,255,255,0) 100%);
+
+
+        .contacts-address-header {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #CFCFCF;
+            position: relative;
+        }
+
+        .contacts-address-text {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+
+        .icon-address {
+            display: block;
+            width: 24px;
+            height: 24px;
+
+            position: absolute;
+            left: -36px;
+        }
+
+        .icon-location-green {
+            background-color: #72A479;
+            mask-image: url("../assets/icons/location.svg");
+            mask-repeat: no-repeat;
+            mask-size: contain;
+        }
+
+        .icon-mail-green {
+            background-color: #72A479;
+            mask-image: url("../assets/icons/mail.svg");
+            mask-repeat: no-repeat;
+            mask-size: contain;
+        }
+    }
+
+    .contacts-reserve {
+        display: flex;
+        justify-content: space-between;
+
+        .contacts-reserve-btn {
+            display: block;
+
+            font-family: 'Proxima Nova';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            color: #FFFFFF;
+
+            text-transform: uppercase;
+
+            background: linear-gradient(115deg, #618967 5%, #72A479 94%);
+            border-radius: 10px;
+            padding: 20px 30px;
+        }
+
+        .contacts-reserve-call {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &>a {
+                font-weight: 700;
+                font-size: 23px;
+                line-height: 28px;
+                color: #FFFFFF;
+            }
+
+            &>p {
+                margin: 0;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                text-align: right;
+                color: #CFCFCF;
+            }
+        }
+    }
+
+    .contacts-social {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+
+        margin-top: 20px;
+
+        &>:first-child {
+            margin-right: 20px;
+        }
+
+        .social-icon {
+            display: block;
+            width: 19px;
+            height: 19px;
+            background-color: red;
+        }
+
+        .social-fb {
+            background: url("../assets/icons/social-fb.svg") no-repeat center;
+        }
+
+        .social-vk {
+            background: url("../assets/icons/social-vk.svg") no-repeat center;
+        }
+
+        .social-yt {
+            background: url("../assets/icons/social-yt.svg") no-repeat center;
+        }
+
+        .social-ig {
+            background: url("../assets/icons/social-ig.svg") no-repeat center;
+        }
+    }
+
+}
+
 
 
 
