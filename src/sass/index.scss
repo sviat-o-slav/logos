@@ -350,6 +350,10 @@ a {
 
         overflow: hidden;
 
+        img {
+            height: 195px;
+        }
+
         .food-carousel-card-info {
             padding: 20px;
             flex-grow: 1;
@@ -401,7 +405,9 @@ a {
             }
 
             a {
-                display: block;
+                display: inline-flex;
+                align-items: center;
+                column-gap: 10px;
 
                 background: linear-gradient(115deg, #618967 5%, #72A479 94%);
                 border-radius: 10px;
@@ -412,7 +418,20 @@ a {
                 color: #FFFFFF;
 
                 padding: 10px 20px;
+
+                i {
+                    display: block;
+                    width: 19px;
+                    height: 19px;
+                    background: url("../assets/icons/cart.svg") no-repeat center;
+                }
             }
         }
     }
 }
+
+
+
+
+
+
