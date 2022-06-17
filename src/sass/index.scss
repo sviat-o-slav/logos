@@ -10,6 +10,11 @@
     src: url('../fonts/zing-rust-demo-base.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proxima-nova.otf') format('truetype');
+}
+
 body {
     margin: 0;
     background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
@@ -19,8 +24,9 @@ body {
     font-family: 'Gilroy';
     font-style: normal;
 
-    min-width: 1220px;
+    scroll-behavior: smooth;
 
+    min-width: 1220px;
 }
 
 ul {
@@ -435,3 +441,174 @@ a {
 
 
 
+
+
+
+.our-cafe {
+    display: flex;
+    column-gap: 30px;
+    padding: 60px;
+
+    margin-top: 100px;
+    margin-bottom: 200px;
+
+    background: #201E1F url("../assets/images/menu-cafe.jpg") no-repeat center right;
+
+    .our-cafe-info {
+        width: 50%;
+
+        h3 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: #CFCFCF;
+            margin-bottom: 60px;
+        }
+
+        a {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px 25px;
+
+            font-family: 'Proxima Nova';
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 16px;
+            color: #FFFFFF;
+
+            text-transform: uppercase;
+
+            
+        }
+    }
+
+    .our-cafe-priorities {
+        width: 50%;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+
+            justify-content: center;
+            align-items: center;
+
+            width: 230px;
+            height: 230px;
+
+            background: rgba(80, 75, 74, 0.9);
+
+            i {
+                display: block;
+                width: 70px;
+                height: 70px;
+            }
+
+            .icon-onion {
+                background: url("../assets/icons/onion.svg") no-repeat center;
+            }
+
+            .icon-lighting {
+                background: url("../assets/icons/lighting.svg") no-repeat center;
+            }
+
+            .icon-chief {
+                background: url("../assets/icons/chief.svg") no-repeat center;
+            }
+
+            .icon-fresh {
+                background: url("../assets/icons/onion.svg") no-repeat center;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a:hover, button:hover {
+    opacity: 0.7;
+    background: rgba(255, 255, 255, 0.05);
+}
