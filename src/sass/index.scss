@@ -438,6 +438,9 @@ a {
 }
 
 .our-cafe {
+    position: relative;
+    z-index: 2;
+
     display: flex;
     column-gap: 30px;
     padding: 60px;
@@ -535,22 +538,15 @@ a {
     }
 }
 
-
-
-
-
-
-
-
-
-
 .contacts-block {
-    
     background: url("../assets/images/map.jpg") no-repeat;
     background-size: cover;
-    padding: 50px;
+    padding: 50px 0;
+    padding-top: 200px;
+    margin-top: -250px;
+    position: relative;
+    z-index: 1;
 }
-
 
 .contacts-card {
     display: flex;
@@ -579,7 +575,7 @@ a {
         row-gap: 10px;
 
         font-style: normal;
-        
+
         padding: 20px 0;
         padding-left: 42px;
 
@@ -588,11 +584,11 @@ a {
 
         border-image-slice: 1;
         border-width: 1px;
-        border-image-source: linear-gradient(90deg, 
-            rgba(255,255,255,0) 0%, 
-            rgba(255,255,255,1) 45%, 
-            rgba(255,255,255,1) 55%, 
-            rgba(255,255,255,0) 100%);
+        border-image-source: linear-gradient(90deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 1) 45%,
+                rgba(255, 255, 255, 1) 55%,
+                rgba(255, 255, 255, 0) 100%);
 
 
         .contacts-address-header {
@@ -699,7 +695,6 @@ a {
             display: block;
             width: 19px;
             height: 19px;
-            background-color: red;
         }
 
         .social-fb {
@@ -718,30 +713,26 @@ a {
             background: url("../assets/icons/social-ig.svg") no-repeat center;
         }
     }
-
 }
 
+.contacts-grid {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contacts-here {
+    width: 92px;
+    height: 92px;
+    background: url("../assets/icons/here.svg") no-repeat center;
+    background-size: contain;
+    left: 100px;
+    position: relative;
+}
 
 .footer-block {
-    background: linear-gradient(270.7deg, #44403F 0.4%, #211F20 100%);
+    background: linear-gradient(270deg, #44403F 0.4%, #211F20 100%);
+
 }
 
 .footer-grid {
